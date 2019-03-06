@@ -1,0 +1,32 @@
+runfile('C:/Users/theka/Desktop/Crypto/RSA Cipher/rsaCipher.py', wdir='C:/Users/theka/Desktop/Crypto/RSA Cipher')
+This will over write the output file C:\Users\theka\Desktop\Crypto\RSA Cipher\outputGirlsGirlsBoysPub.txt. (C)ontinue or (Q)uit
+
+> c
+Encrypting and writing to C:\Users\theka\Desktop\Crypto\RSA Cipher\outputGirlsGirlsBoysPub.txt...
+Traceback (most recent call last):
+
+  File "<ipython-input-62-e1237dd7417b>", line 1, in <module>
+    runfile('C:/Users/theka/Desktop/Crypto/RSA Cipher/rsaCipher.py', wdir='C:/Users/theka/Desktop/Crypto/RSA Cipher')
+
+  File "C:\Users\theka\Anaconda3\lib\site-packages\spyder\utils\site\sitecustomize.py", line 705, in runfile
+    execfile(filename, namespace)
+
+  File "C:\Users\theka\Anaconda3\lib\site-packages\spyder\utils\site\sitecustomize.py", line 102, in execfile
+    exec(compile(f.read(), filename, 'exec'), namespace)
+
+  File "C:/Users/theka/Desktop/Crypto/RSA Cipher/rsaCipher.py", line 223, in <module>
+    main()
+
+  File "C:/Users/theka/Desktop/Crypto/RSA Cipher/rsaCipher.py", line 43, in main
+    encryptedText = encryptAndWriteToFile(inputFilename, pubKeyFilename, message, outputFilenamePub)
+
+  File "C:/Users/theka/Desktop/Crypto/RSA Cipher/rsaCipher.py", line 155, in encryptAndWriteToFile
+    encryptedBlocks = encryptMessage(message, (n, e), blockSize)
+
+  File "C:/Users/theka/Desktop/Crypto/RSA Cipher/rsaCipher.py", line 112, in encryptMessage
+    for block in getBlocksFromText(message, blockSize):
+
+  File "C:/Users/theka/Desktop/Crypto/RSA Cipher/rsaCipher.py", line 86, in getBlocksFromText
+    blockInt += (SYMBOLS.index(message[i])) * (len(SYMBOLS) ** (i % blockSize))
+
+ValueError: substring not found
