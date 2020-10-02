@@ -9,7 +9,8 @@ def getMode():
         if mode in "E D B".split():
             return mode[0]
         else:
-            print("If you are Encrypting please press E\n If you are Decrypting please press D\n If you are using Brutus Force" u"\u2122" " please press B")
+            print("If you are Encrypting please press E\n If you are Decrypting please press D\n If you are using "
+                  "Brutus Force" u"\u2122" " please press B")
             
 def getMessage():
     print("Please enter your message for translation")
